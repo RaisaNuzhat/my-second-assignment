@@ -10,7 +10,7 @@ body{
 .container
 {
     max-width: 80%;
-    margin: auto;
+    margin:0 auto; 
 }
 .banner
 {
@@ -114,11 +114,64 @@ cursor: pointer;
 {
     padding-right: 10px;
 }
-@media screen and (min-width: 992px) {
+.tour
+{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.tp1
+{
+color: rgba(19, 19, 24, 0.70);
+line-height: 26px; /* 162.5% */
+margin-top: 24px;
+margin-bottom: 24px;
+}
+.tul ul
+{
+ color: rgba(19, 19, 24, 0.70);
+line-height: 26px; /* 162.5% */
+text-align: left;
+
+}
+.tul-li
+{
+    margin: 20px 5px;
+}
+.tp2
+{
+color: #5A5A5D;
+line-height: 26px; /* 162.5% */
+margin-top: 20px;
+}
+.tour-title
+{
+color: #131318;
+text-align: left;
+font-size: 2.5rem;
+font-weight: 800;
+
+}
+#tour-btn
+{
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    background: #FF5400;
+    color: #FFF;
+    font-weight: 700px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* @media screen and (min-width: 992px) {
     .banner-title
     {
         font-size: 1.2rem;
-        padding: 30px 5px;
+        padding:  30px 5px 30px 5px;
     }
     .banner-description
     {
@@ -133,8 +186,8 @@ cursor: pointer;
 
     }
 
-}
-@media screen and (max-width:600px){
+} */
+@media screen and (max-width:600px)  {
 
      .banner-title
      {
@@ -149,13 +202,34 @@ cursor: pointer;
     .banner-form
     {
         flex-direction:column; 
-        padding-left: 20px;
-       
+        margin-top: 40px;
     }
-    input , select,#banner-btn
+    input,select,#banner-btn
     {
         width: 100px;
-        height: 30px;
-
+        height: 20px;
+        margin: 5px ;
+    }
+    .tour{
+        flex-direction: column;
+    }
+    .tour-title{
+        font-size: 2rem;
+        margin: 5px;
+    }
+    .tp1,.tp2
+    {
+        font-size: 0.8rem;
+        margin: 10px;
+    }
+    .tul-li
+    {
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+    .tour-img img
+    {
+        width: 60%;
+        height:60%;
     }
 }
