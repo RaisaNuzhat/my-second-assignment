@@ -12,6 +12,7 @@ body{
     max-width: 80%;
     margin:0 auto; 
 }
+
 .banner
 {
     background-image: url(./Images/bannerimg.png);
@@ -117,7 +118,8 @@ cursor: pointer;
 .tour
 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -167,26 +169,182 @@ font-weight: 800;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-/* @media screen and (min-width: 992px) {
-    .banner-title
-    {
-        font-size: 1.2rem;
-        padding:  30px 5px 30px 5px;
-    }
-    .banner-description
-    {
-        padding: 5px;
-        font-size: 1rem;
-    }
-    
-    input , select,#banner-btn
-    {
-        width: 100px;
-        height: 20px;
+.destination
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.dest-title
+{
+    color: #131318;
+text-align: center;
+font-size: 2.5rem;
+font-weight: 800;
+margin-bottom: 30px;
+}
+.dest-description
+{
+    color: rgba(19, 19, 24, 0.70);
+text-align: center;
+margin-bottom: 40px;
+line-height: 26px; /* 162.5% */
+}
 
-    }
-
+.row
+{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/* .one img ,.two img
+{
+    position: relative;
+}
+.maldives,.indo
+{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
 } */
+
+.destination img
+{
+    width: 573px;
+    height: 300px;
+    border-radius: 16px;
+}
+#last
+{
+    gap: 20px;  
+}
+#big
+{
+    width: 673px;
+}
+#small
+{
+    width: 540px;
+}
+/* choose section */
+.choose-title
+{
+    color: #131318;
+text-align: center;
+font-size: 2.5rem;
+font-weight: 800;
+margin: 20px 0;
+}
+.choose-des
+{
+color: rgba(19, 19, 24, 0.70);
+text-align: center;
+line-height: 26px; 
+margin: 10px 0;
+/* 162.5% */
+}
+.choose-row-1
+{
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+}
+.hotels
+{
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+width: 573px;
+height: 100%;
+padding: 20px;
+text-align: left;
+}
+#hotel-title,#wc-title,#price-title
+{
+    color: #131318;
+    margin-top: 10px;
+
+font-size: 1.5rem;
+font-weight: 800;
+line-height: normal;
+}
+#hotel-des,#wc-description,#price-des
+{
+color: #5A5A5D;
+margin-top: 10px;
+margin-bottom: 10px;
+line-height: 26px; /* 162.5% */
+}
+.world-class
+{
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+width: 573px;
+height: 100%;
+padding: 20px;
+text-align: left;
+}
+.world-class span,
+.hotels span,
+.price span
+{
+    width: 64px;
+    height: 64px;
+}
+.choose-row-2
+{
+    display: flex;
+}
+.price
+{
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin: 30px 300px;
+    width: 573px;
+    height: 100%;
+}
+/* .grid-box1
+{
+    grid-area: grid-box1;
+}
+.grid-box2
+{
+    grid-area: grid-box2;
+}
+.grid-box3
+{
+    grid-area: grid-box3;
+}
+.grid-box4
+{
+    grid-area: grid-box4;
+}
+.grid-box5
+{
+    grid-area: grid-box5;
+}
+.grid-box6
+{
+    grid-area: grid-box6;
+}
+.grid-box7
+{
+    grid-area: grid-box7;
+} */
+/* .row
+{
+    display: grid;
+    grid-template-areas:
+     "box1 box1 box2 "
+     "box3 box4 box5"
+     "box6 box6 box7"
+    ;
+} */
+
+
 @media screen and (max-width:600px)  {
 
      .banner-title
@@ -232,4 +390,52 @@ font-weight: 800;
         width: 60%;
         height:60%;
     }
+    .dest-title
+    {
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+    #first,
+    #second,
+    #last{
+        flex-direction: column;
+        gap: 5px;
+        margin: 10px auto;
+    }
+     .destination img ,#small,#big
+    {
+        width: 191px;
+        height: 100px;
+    }
+    /* #small,
+    #big
+    {
+        width: 50%;
+        height: 100%;
+    }  */
+
+    .dest-description
+    {
+        font-size: 0.8rem;
+    }
+    .choose-row-1,.choose-row-2
+    {
+        flex-direction: column;
+        margin: 5px 0;
+    }
+    .price,.hotels,.world-class
+    {
+        width: 80%;
+        height: 60%;
+       margin: 5px 0;
+    }
+    #hotel-title,#wc-title,#price-title
+    {
+        margin: 0;
+        font-size: 1rem;
+    }
+#hotel-des,#wc-description,#price-des
+{
+margin:5px;
+}
 }
