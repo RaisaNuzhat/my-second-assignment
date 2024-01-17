@@ -31,6 +31,11 @@ nav ul li{
     list-style: none;
     margin-right: 50px;
 }
+.active
+/* nav  ul li:hover  */
+{
+    color: #f7be05;
+}
 #contact
 {
     margin-right: 0;
@@ -437,7 +442,7 @@ line-height: 26px; /* 162.5% */
 {
     background-color: rgba(14, 14, 21, 0.1);
     height: 2px;
-    width: 80%;
+    width: 88%;
     margin: 10px 0;
 }
 .letter-form
@@ -450,14 +455,14 @@ line-height: 26px; /* 162.5% */
 }
 #letter-name
 {
-
+    width: 100%;
  padding: 7px 10px;
  border-radius: 8px;
 background: rgba(19, 19, 24, 0.05);
 }
 #letter-email
 {
-
+width: 100%;
  padding: 7px 10px;
  border-radius: 8px;
 background: rgba(19, 19, 24, 0.05);
@@ -468,7 +473,7 @@ border-radius: 8px;
 background: #FF5400;
 border: 0;
 color: #FFF;
-width: 80%;
+width: 88%;
 padding: 7px 10px;
 }
 /* #letter-png
@@ -510,7 +515,58 @@ padding-top: 10px;
 
 }
 /* newsletter section ends */
+/* bonus section */
+.bonus
+{
+    background-image: url(./Images/bonus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    
+}
+.bonus::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 16px;
+    z-index: -1;
+}
+.bonus-contents
+{
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+}
+.bonus-contents h3{
+    font-size: 1.7rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.bonus-contents h4
 
+{
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bonus-contents p
+{
+    font-size: 1.5rem;
+    color:white;
+    padding-top: 40px;
+}
+.bonus-contents a{
+    text-decoration: none;
+    color: #fcf805;
+}
 /* footer begins */
 .footer
 {
@@ -596,6 +652,7 @@ margin: 30px 0;
     .nav-burger
 {
     display: block;
+    cursor: pointer;
 }
      .banner-title
      {
@@ -700,7 +757,7 @@ margin:5px;
 .newsletter
 {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 10px auto;
 }
  /* .letter
 {
@@ -722,9 +779,30 @@ margin:5px;
 {
     font-size: 1.2rem;
 }
+.bonus
+{
+    margin: 10px auto;
+}
+.bonus h3
+{
+    font-size: 1.2rem;
+}
+.bonus h4
+{
+    font-size: 1.3rem;
+}
+.bonus p
+{
+    font-size: 1rem;
+}
+.bonus a {
+    font-size: 0.8rem;
+    padding-bottom: 10px
+};
 .footer
 {
     height: 300px;
+    margin-top: 10px;
 }
 
 .footer-des
