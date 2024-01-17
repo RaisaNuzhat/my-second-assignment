@@ -459,6 +459,82 @@ padding-top: 10px;
 
 }
 /* newsletter section ends */
+
+/* footer begins */
+.footer
+{
+    background: rgba(19, 19, 24, 0.05);
+    height: 350px;
+    margin-top: 100px;
+}
+.footer-contents
+{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contents h3
+{
+    color: #131318;
+font-family: Mulish;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 800;
+}
+.footer-contents span
+{
+    color: #FF5400;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.footer-contents img
+{
+    width: 28px;
+    height: 30px;
+    margin-right: 20px;
+}
+/* .footer-titles
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.footer-des
+{
+    margin: 10px auto;
+    text-align: center;
+    color: #5A5A5D;
+    font-size: 1rem;
+    line-height: 24px; /* 171.429% */    
+    
+
+}
+.footer-icons
+{
+    margin: 30px 0;
+    display: flex;
+     justify-content: space-around; 
+    align-items: center;
+}
+.footer-line
+{
+    background-color: rgba(14, 14, 21, 0.1);
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+}
+.all-rights
+{
+color: #131318;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+text-align: center;
+margin: 30px 0;
+}
 @media screen and (max-width:600px)  {
 
      .banner-title
