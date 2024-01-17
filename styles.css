@@ -642,6 +642,10 @@ font-weight: 300;
 text-align: center;
 margin: 30px 0;
 }
+
+
+
+/* responsive part */
 @media screen and (max-width:600px)  {
 
 
@@ -656,13 +660,14 @@ margin: 30px 0;
 }
      .banner-title
      {
-        font-size: 1.2rem;
-        padding: 20px 5px;
+        font-size: 1.3rem;
+        padding: 20px 10px;
+
      }
      .banner-description
      {
-        font-size: 1.1rem;
-        padding: 5px 20px;
+        font-size: 1rem;
+        padding: 5px 10px;
      }
     .banner-form
     {
