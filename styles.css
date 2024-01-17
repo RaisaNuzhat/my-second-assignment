@@ -550,7 +550,11 @@ margin: 30px 0;
     .banner-form
     {
         flex-direction:column; 
-        margin-top: 40px;
+        margin: 40px auto;
+        width: 200px;
+        height: 100%;
+        gap: 15px;
+       
     }
     input,select,#banner-btn
     {
@@ -577,8 +581,8 @@ margin: 30px 0;
     }
     .tour-img img
     {
-        width: 60%;
-        height:60%;
+        width: 100%;
+        height:100%;
     }
     .dest-title
     {
@@ -592,10 +596,15 @@ margin: 30px 0;
         gap: 5px;
         margin: 10px auto;
     }
-     .destination img ,#small,#big
+      .destination img
+      {
+        width: 100%;
+        height: 100%;
+      }
+     #small,#big
     {
-        width: 191px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
     /* #small,
     #big
@@ -615,7 +624,7 @@ margin: 30px 0;
     }
     .price,.hotels,.world-class
     {
-        width: 80%;
+        width: 90%;
         height: 60%;
        margin: 5px 0;
     }
@@ -631,15 +640,20 @@ margin:5px;
 .newsletter
 {
     flex-direction: column;
-    margin: 10px;
+    margin: 0 auto;
 }
-.letter-img img,.letter
+ /* .letter
 {
-    width: 90%;
-}
+    width: 100%;
+}  */
+ .letter-img img
+{
+    width: 100%;
+    
+} 
 .letter-div
 {
-    right: 60px;
+    right: 10px;
     bottom: 34px;
     width: 200px;
     height: 100px;
@@ -648,4 +662,30 @@ margin:5px;
 {
     font-size: 1.2rem;
 }
+.footer
+{
+    height: 300px;
+}
+
+.footer-des
+{
+    margin: 5px auto;
+    font-size: 0.8rem;
+}
+.footer-contents
+{
+    padding: 20px ;
+}
+.footer-contents h3,
+.footer-contents span
+{
+font-size: 1.3rem;
+
+}
+.all-rights
+{
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
 }
